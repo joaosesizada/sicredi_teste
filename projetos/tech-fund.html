@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="tech-fund.css">
-    <title>Sicredi</title>
+    <link rel="stylesheet" href="venda.css">
+    <link rel="stylesheet" href="cripto.css">
+    <title>Sicredi - Investimentos</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script defer src="global.js"></script>
+    <script defer src="invest.js"></script>
 </head>
 <body>
 <header>
@@ -17,7 +20,7 @@
         <img src="img/icon.menu.png" alt="">
     </div>
     <div class="titulo_pg">
-        <h1>Fundo Tech</h1>
+        <h1>Investimentos</h1>
     </div>
     <div class="icon_sicredi">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -80,12 +83,62 @@
     <div class="imagem_icon_menu"><img src="img/icon.networking.png" alt=""></div>
     <div class="imagem_icon_menu"><img src="img/icon.promo.png" alt=""></div>
 </div>
+<div class="venda">
+    <div class="venda_hearder">
+        <div class="venda_risco"><img id="risco_icon_venda" src="" alt=""></div>
+        <div class="title">XXXXXXXXXXXX</div>
+        <div class="venda_close" id="vendas_close"><img src="img/close_icon.png" alt=""></div>
+    </div>
+    <div class="rentabilidade">rentabilidade (%)</div>
+    <div class="rentabilidade-detalhes">
+        <div id="rent_mes_atual">Mês Atual:X.XX%</div>
+        <div id="rent_mes_anterior">Mês Anterior:X.XX%</div>
+        <div id="rent_12_meses">12 Meses:X.XX%</div>
+    </div>
+    <div class="quantidade-container">
+        <button id="btn_qtn_menos">-</button>
+        <input type="text" value="1" id="qtn_vendas">
+        <button id="btn_qtn_mais">+</button>
+    </div>
+    <div class="valor">Valor:XXX,XX</div>
+    <div class="pai_btn_comprar">
+        <button class="btn-comprar">Comprar</button>
+    </div>
+</div>
+<div class="venda_cripto">
+    <div class="venda_cripto_hearder">
+        <img src="" alt="" height="40px" id="venda_cripto_icon">
+        <div id="venda_cripto_title">XXXXXXX</div>
+        <div id="venda_cripto_abreve">(XXX)</div>
+        <div>
+            <div class="venda_close_cripto" id="vendas_close_cripto"><img src="img/close_icon.png" alt=""></div>
+        </div>
+    </div>
+    <div class="venda_cripto_body">
+        <div class="venda_cripto_info">
+            <h2>Valores</h2>
+            <div id="venda_cripto_value">R$XXXXXXXX</div>
+        </div>
+        <div class="venda_cripto_info">
+            <h2>Rentabilidade dia</h2>
+            <div id="venda_cripto_rent">XXX%</div>
+        </div>
+    </div>
+    <div class="quantidade-container">
+        <button id="btn_qtn_menos">-</button>
+        <input type="text" value="1" id="qtn_vendas">
+        <button id="btn_qtn_mais">+</button>
+    </div>
+    <div class="pai_btn_comprar">
+        <button class="btn-comprar">Comprar</button>
+    </div>
+</div>
 <div class="base">
     <div class="introducao">
         <div class="introducao_box">
             <div class="box_introducao">
-                    <h1>Esse é o, Fundo Tech.</h1>
-                    <p>Uma iniciativa que tem como objetivo facilitar o acesso dos cooperados a oportunidades de investimento em empresas e projetos inovadores dentro do ramo da tecnologia. Ao conectar os cooperados a essas oportunidades, o fundo busca não apenas promover o crescimento econômico, mas também incentivar a inovação e o desenvolvimento tecnológico dentro da comunidade cooperativa.</p>
+                    <h1>Investir agora ficou Facil!!</h1>
+                    <p>Uma iniciativa dedicada a facilitar o acesso dos cooperados a oportunidades de investimento em empresas e projetos inovadores. Ao conectar os cooperados a essas oportunidades, o fundo visa não apenas impulsionar o crescimento econômico, mas também fomentar a inovação e o desenvolvimento dentro da comunidade.</p>
                 </div>
                 <div class="imagem_box">
                     <img src="invest/invest_1.jpg" alt="Investimentos Tech Sicredi">
@@ -103,10 +156,10 @@
                 </div>
             </div>
             <div class="sobre_item_corpo">
-                <p>Agora você pode investir nas <span>Maiores</span> empresas de tecnologia do mundo, além de conseguir negociar <span>criptomoedas</span> diretamente com a gente</p>
+                <p> Agora você pode investir nas <span>maiores</span> empresas do mercado e em nossos <span>fundos</span>, além de negociar <span>criptomoedas</span> diretamente conosco. Interessado em explorar mais sobre o mundo dos investimentos ou não sabe por onde começar? Visite nosso <span>Blog</span> e descubra tudo o que você precisa saber."</p>
             </div>
             <div class="sobre_item_corpo_href">
-                <p>Explorar Investimentos</p>
+                <p>Nosso Blog</p>
             </div>
         </div>
         <div class="sobre_item">
@@ -119,10 +172,10 @@
                 </div>
             </div>
             <div class="sobre_item_corpo">
-                <p>Transforme seus sonhos em <span>realidade</span>, através dos nosos fundos de investimento inovadores. Investir estrategicamente não apenas amplia suas chances de sucesso financeiro, mas também é uma ponte para alcançar objetivos significativos. </p>
+                <p>Transforme seus sonhos em <span>realidade</span>, através dos nosos fundos de investimento inovadores. Investir não apenas amplia suas chances de sucesso financeiro, mas também é uma ponte para alcançar seus <span>objetivos</span>.</p>
             </div>
             <div class="sobre_item_corpo_href">
-                <p>Conhecer Investimentos</p>
+                <p onclick="scrollToSection()">Conhecer Investimentos</p>
             </div>
         </div>
         <div class="sobre_item">
@@ -134,15 +187,838 @@
                     <h3>Criptomoedas</h3>
                 </div>
             </div>
-            <div class="sobre_item_corpo" id="sobre_item_corpo_cripto">
+            <div class="sobre_item_corpo">
                 <p>
-                    Investir em criptomoedas nunca foi tão acessível como agora. Compre e venda uma variedade de criptomoedas, incluindo Bitcoin, Ethereum e outras altcoins, de maneira simples e eficiente. Diversifique seus investimentos para explorar oportunidades de crescimento. Faça isso com segurança, transparência e suporte especializado para guiar suas decisões de investimento. 
+                    Investir em <span>criptomoedas</span> nunca foi tão acessível como agora. Compre e venda uma variedade de criptomoedas, incluindo <span>Bitcoin, Ethereum e outras altcoins</span>, de maneira simples e eficiente. Diversifique seus investimentos para explorar oportunidades de crescimento. Faça isso com segurança, transparência e suporte especializado para guiar suas decisões de investimento. 
                 </p>
             </div>
             <div class="sobre_item_corpo_href">
-                <p>Conhecer Investimentos</p>
+                <p onclick="scrollToId('cripto_redirect')">Explorar Criptomoedas</p>
             </div>
         </div>
     </div>
+    <div class="investimentos_pai">
+        <div class="tituloTabela">
+            <h1>Nossos Investimentos</h1>
+        </div>
+        <div class="Tabela_riscos">
+            <div class="pai_risco">
+                <div class="rico_item"><img src="invest/fundos_icon.png" alt=""><p>Fundos</p></div>
+                <div class="rico_item"><img src="invest/acoes_icon.png" alt=""><p>Ações</p></div>
+                <div class="rico_item"><img src="img/icon.fund.tech.png" alt=""><p>Criptomoedas</p></div>
+            </div>
+        </div>
+        <div class="Tabela_riscos">
+            <h1>Tabela de Riscos</h1>
+            <div class="pai_risco">
+                <div class="rico_item"><img src="invest/risco_pouco.png" alt="">Baixo</div>
+                <div class="rico_item"><img src="invest/risco_baixo.png" alt="">Pouco</div>
+                <div class="rico_item"><img src="invest/risco_medio.png" alt="">Médio</div>
+                <div class="rico_item"><img src="invest/risco_moderado.png" alt="">Moderado</div>
+                <div class="rico_item"><img src="invest/risco_alto.png" alt="">Alto</div>
+            </div>
+        </div>
+        <div class="fundos">
+            <h1>Fundos</h1>
+            <div class="fundos_itens" id="fundos_itens">
+                <div class="card card_risco_pouco">
+                    <div class="header_card">
+                        <img src="invest/risco_pouco.png" alt="Logo" class="logo">
+                        <h1>Sicredi Fundo Tech </h1>
+                    </div>
+                    <div class="body_card" id="card_Intel" data-expandido="false">
+                        <p>Fundo criado para facilitar a vida dos colaboradores do Sicredi, oferecendo acesso a investimentos diversificados. Composto pelas 10 maiores empresas da área, além de estratégias de investimento em criptomoedas, visa proporcionar oportunidades de crescimento financeiro e proteção patrimonial aos participantes. Além de maximizar retornos, o fundo está comprometido em impulsionar a inovação, promover práticas sustentáveis e gerar um impacto positivo tanto no mercado quanto na comunidade financeira.</p>
+                    </div>
+                    <button class="details-button" onclick="maisDetalhes('card_Intel','btn_sicredi_tech')" id="btn_sicredi_tech">Ler mais</button>
+                    <div class="content">
+                        <div class="section">
+                            <h2>rentabilidade (%)</h2>
+                            <p>Mês Atual: <span>2.11%</span></p>
+                            <p>Mês Anterior: <span>3,24%</span></p>
+                            <p>12 Meses: <span>10,47%</span></p>
+                        </div>
+                        <div class="section">
+                            <h2>Valor</h2>
+                            <p>Aplicação Inicial: <span class="value">R$ 125,00</span></p>
+                        </div>
+                    </div>
+                    <button class="invest-button" onclick="vendas('invest/risco_pouco.png', 'Sicredi Fundo Tech', '2.11%', '3,24%', '10,47%', '125,00')">Investir</button>
+                </div>
+                <div class="card card_risco_medio">
+                    <div class="header_card">
+                        <img src="invest/risco_medio.png" alt="Logo" class="logo">
+                        <h1>Sicredi Fundo Agro</h1>
+                    </div>
+                    <div class="body_card" id="card_Agro" data-expandido="false">
+                        <p>Fundo criado para facilitar a vida dos colaboradores do Sicredi, oferecendo acesso a investimentos diversificados no setor agropecuário. Composto por empresas líderes no agronegócio, além de estratégias de investimento em commodities agrícolas, visa proporcionar oportunidades de crescimento financeiro e proteção patrimonial aos participantes. Além de maximizar retornos, o fundo está comprometido em impulsionar práticas sustentáveis e gerar um impacto positivo tanto no mercado quanto na comunidade agrícola.</p>
+                    </div>
+                    <button class="details-button" onclick="maisDetalhes('card_Agro', 'btn_sicredi_agro')" id="btn_sicredi_agro">Ler mais</button>
+                    <div class="content">
+                        <div class="section">
+                            <h2>Rentabilidade (%)</h2>
+                            <p>Mês Atual: <span>1.89%</span></p>
+                            <p>Mês Anterior: <span>2,75%</span></p>
+                            <p>12 Meses: <span>8,92%</span></p>
+                        </div>
+                        <div class="section">
+                            <h2>Valor</h2>
+                            <p>Aplicação Inicial: <span class="value">R$ 100,00</span></p>
+                        </div>
+                    </div>
+                    <button class="invest-button" onclick="vendas('invest/risco_medio.png', 'Sicredi Fundo Agro', '1.89%', '2,75%', '8,92%', '100,00')">Investir</button>
+                </div>
+                <div class="card card_risco_baixo">
+                    <div class="header_card">
+                        <img src="invest/risco_baixo.png" alt="Logo" class="logo">
+                        <h1>Sicredi Fundo Saúde</h1>
+                    </div>
+                    <div class="body_card" id="card_Saude" data-expandido="false">
+                        <p>Fundo criado para facilitar a vida dos colaboradores do Sicredi, oferecendo acesso a investimentos diversificados no setor de saúde. Composto por empresas líderes em saúde e biotecnologia, além de estratégias de investimento em inovações médicas, visa proporcionar oportunidades de crescimento financeiro e proteção patrimonial aos participantes. Além de maximizar retornos, o fundo está comprometido em impulsionar práticas sustentáveis e gerar um impacto positivo tanto no mercado quanto na comunidade de saúde.</p>
+                    </div>
+                    <button class="details-button" onclick="maisDetalhes('card_Saude', 'btn_sicredi_saude')" id="btn_sicredi_saude">Ler mais</button>
+                    <div class="content">
+                        <div class="section">
+                            <h2>Rentabilidade (%)</h2>
+                            <p>Mês Atual: <span>2.35%</span></p>
+                            <p>Mês Anterior: <span>3,12%</span></p>
+                            <p>12 Meses: <span>9,81%</span></p>
+                        </div>
+                        <div class="section">
+                            <h2>Valor</h2>
+                            <p>Aplicação Inicial: <span class="value">R$ 150,00</span></p>
+                        </div>
+                    </div>
+                    <button class="invest-button" onclick="vendas('invest/risco_baixo.png', 'Sicredi Fundo Saúde', '2.35%', '3,12%', '9,81%', '150,00')">Investir</button>
+                </div>
+                <div class="card card_risco_pouco">
+                    <div class="header_card">
+                        <img src="invest/risco_pouco.png" alt="Logo" class="logo">
+                        <h1>Sicredi Fundo Imobiliário</h1>
+                    </div>
+                    <div class="body_card" id="card_Imobiliario" data-expandido="false">
+                        <p>Fundo criado para facilitar o acesso dos cooperados a investimentos no setor imobiliário. Composto por empreendimentos residenciais e comerciais, o fundo visa proporcionar oportunidades de crescimento financeiro e diversificação de patrimônio aos participantes, contribuindo para o desenvolvimento do mercado imobiliário local.</p>
+                    </div>
+                    <button class="details-button" onclick="maisDetalhes('card_Imobiliario', 'btn_sicredi_imobiliario')" id="btn_sicredi_imobiliario">Ler mais</button>
+                    <div class="content">
+                        <div class="section">
+                            <h2>Rentabilidade (%)</h2>
+                            <p>Mês Atual: <span>1.98%</span></p>
+                            <p>Mês Anterior: <span>2.75%</span></p>
+                            <p>12 Meses: <span>8.23%</span></p>
+                        </div>
+                        <div class="section">
+                            <h2>Valor</h2>
+                            <p>Aplicação Inicial: <span class="value">R$ 200,00</span></p>
+                        </div>
+                    </div>
+                    <button class="invest-button" onclick="vendas('invest/risco_pouco.png', 'Sicredi Fundo Imobiliário', '1.98%', '2.75%', '8.23%', '200,00')">Investir</button>
 
+                </div>
+                <div class="card card_risco_moderado">
+                    <div class="header_card">
+                        <img src="invest/risco_moderado.png" alt="Logo" class="logo">
+                        <h1>Sicredi Fundo de Energias Renováveis</h1>
+                    </div>
+                    <div class="body_card" id="card_EnergiasRenovaveis" data-expandido="false">
+                        <p>Fundo voltado para investimentos em energias renováveis, como solar, eólica e outras fontes limpas de energia. Composto por projetos inovadores que visam reduzir a pegada ambiental e promover a sustentabilidade energética, o fundo oferece oportunidades de crescimento financeiro alinhadas com práticas sustentáveis e responsáveis.</p>
+                    </div>
+                    <button class="details-button" onclick="maisDetalhes('card_EnergiasRenovaveis', 'btn_sicredi_energia')" id="btn_sicredi_energia">Ler mais</button>
+                    <div class="content">
+                        <div class="section">
+                            <h2>Rentabilidade (%)</h2>
+                            <p>Mês Atual: <span>2.45%</span></p>
+                            <p>Mês Anterior: <span>3.18%</span></p>
+                            <p>12 Meses: <span>11.54%</span></p>
+                        </div>
+                        <div class="section">
+                            <h2>Valor</h2>
+                            <p>Aplicação Inicial: <span class="value">R$ 250,00</span></p>
+                        </div>
+                    </div>
+                    <button class="invest-button" onclick="vendas('invest/risco_moderado.png', 'Sicredi Fundo de Energias Renováveis', '2.45%', '3.18%', '11.54%', '250,00')">Investir</button>
+
+                </div>
+                <div class="card card_risco_moderado">
+                    <div class="header_card">
+                        <img src="invest/risco_moderado.png" alt="Logo" class="logo">
+                        <h1>Sicredi Fundo de Indústria</h1>
+                    </div>
+                    <div class="body_card" id="card_Industria" data-expandido="false">
+                        <p>Fundo destinado a investimentos no setor industrial, abrangendo desde manufatura até tecnologias avançadas. Composto por empresas líderes em inovação industrial e infraestrutura, o fundo busca proporcionar oportunidades de crescimento econômico e diversificação de investimentos aos cooperados, contribuindo para o desenvolvimento do setor industrial local.</p>
+                    </div>
+                    <button class="details-button" onclick="maisDetalhes('card_Industria', 'btn_sicredi_industria')" id="btn_sicredi_industria">Ler mais</button>
+                    <div class="content">
+                        <div class="section">
+                            <h2>Rentabilidade (%)</h2>
+                            <p>Mês Atual: <span>2.15%</span></p>
+                            <p>Mês Anterior: <span>2.98%</span></p>
+                            <p>12 Meses: <span>9.62%</span></p>
+                        </div>
+                        <div class="section">
+                            <h2>Valor</h2>
+                            <p>Aplicação Inicial: <span class="value">R$ 180,00</span></p>
+                        </div>
+                    </div>
+                    <button class="invest-button" onclick="vendas('invest/risco_moderado.png','Sicredi Fundo de Indústria', '2.15%', '2.98%', '9.62%', '180,00')">Investir</button>
+                </div>
+                <div class="card card_risco_alto">
+                    <div class="header_card">
+                        <img src="invest/risco_alto.png" alt="Logo" class="logo">
+                        <h1>Sicredi Fundo de Seguros</h1>
+                    </div>
+                    <div class="body_card" id="card_Seguros" data-expandido="false">
+                        <p>Fundo focado em investimentos no setor de seguros, abrangendo seguradoras líderes e inovadoras. Composto por empresas que oferecem seguros de vida, saúde, automóveis e outros ramos, o fundo visa proporcionar estabilidade financeira e proteção patrimonial aos cooperados, alinhado com práticas seguras e responsáveis no mercado de seguros.</p>
+                    </div>
+                    <button class="details-button" onclick="maisDetalhes('card_Seguros', 'btn_sicredi_seguro')" id="btn_sicredi_seguro">Ler mais</button>
+                    <div class="content">
+                        <div class="section">
+                            <h2>Rentabilidade (%)</h2>
+                            <p>Mês Atual: <span>1.92%</span></p>
+                            <p>Mês Anterior: <span>2.67%</span></p>
+                            <p>12 Meses: <span>7.89%</span></p>
+                        </div>
+                        <div class="section">
+                            <h2>Valor</h2>
+                            <p>Aplicação Inicial: <span class="value">R$ 220,00</span></p>
+                        </div>
+                    </div>
+                    <button class="invest-button" onclick="vendas('invest/risco_alto.png','Sicredi Fundo de Seguros', '1.92%', '2.67%', '7.89%', '220,00')">Investir</button>
+                </div>                                                
+            </div>
+            <button class="mostrar_mais_button" onclick="maisFundos('fundos_itens')" id="mais_fundo">Mostrar mais Fundos</button>
+        </div>
+        <div class="acoes">
+            <h1>Ações</h1>
+            <div class="acoes_itens" id="acoes_itens">
+                <div class="card card_risco_pouco">
+                    <div class="header_card">
+                        <img src="invest/risco_pouco.png" alt="Logo" class="logo">
+                        <h1>Apple Inc. (AAPL34)</h1>
+                    </div>
+                    <div class="body_card" id="card_AAPL" data-expandido="false">
+                        <p>A Apple é uma das gigantes globais da tecnologia, amplamente reconhecida por sua influência e inovação no mercado. Fundada por Steve Jobs, Steve Wozniak e Ronald Wayne em 1976, a empresa revolucionou o setor com produtos icônicos como o iPhone, iPad e MacBook. Além de seus dispositivos móveis e computadores pessoais, a Apple também é conhecida por seu sistema operacional iOS, sua loja de aplicativos App Store e serviços de streaming como Apple Music e Apple TV+. Com uma base de fãs globalmente dedicada, a Apple continua a liderar o caminho na interseção entre tecnologia e design, moldando constantemente o futuro da indústria tecnológica.</p>
+                    </div>
+                    <button class="details-button" onclick="maisDetalhes('card_AAPL', 'mais_aplle')" id="mais_aplle">Ler mais</button>
+                    <div class="content">
+                        <div class="section">
+                            <h2>Cotação (%)</h2>
+                            <p>Mês Atual: <span>8,05%</span></p>
+                            <p>Mês Anterior: <span>7,54%</span></p>
+                            <p>12 Meses: <span>36,87%</span></p>
+                        </div>
+                        <div class="section">
+                            <h2>Valor</h2>
+                            <p>Ação: <span class="value">R$ 63,56</span></p>
+                        </div>
+                    </div>
+                    <button class="invest-button" onclick="vendas('invest/risco_pouco.png', 'Apple Inc. (AAPL34)', '8,05%', '7,54%', '36,87%', '63.56')">Investir</button>
+                </div>
+                
+                <div class="card card_risco_baixo">
+                    <div class="header_card">
+                        <img src="invest/risco_baixo.png" alt="Logo" class="logo">
+                        <h1>NVIDIA Corporation (NVDA)</h1>
+                    </div>
+                    <div class="body_card" id="card_NVDA" data-expandido="false">
+                        <p>NVIDIA é uma empresa líder mundial em tecnologia de processamento gráfico, conhecida por suas GPUs, que são amplamente utilizadas em jogos, computação científica e inteligência artificial. Fundada em 1993, a NVIDIA é renomada pela linha GeForce, que oferece gráficos de alta qualidade para jogos, e pela tecnologia NVIDIA RTX, que revolucionou os gráficos com ray tracing em tempo real.</p>
+                        <p>Além dos jogos, as GPUs NVIDIA, como Tesla e A100, são essenciais na computação científica e supercomputação, acelerando pesquisas em diversas disciplinas. Em inteligência artificial, suas GPUs e a plataforma CUDA são cruciais para o treinamento e execução de modelos de IA e aprendizado de máquina.</p>
+                        <p>A NVIDIA também investe em inovações como carros autônomos, com a plataforma NVIDIA DRIVE, e está expandindo no mercado de data centers e computação em nuvem com soluções como a NVIDIA DGX. A empresa colabora globalmente com líderes de tecnologia e instituições de pesquisa, tendo um impacto significativo em várias indústrias. Recentes aquisições estratégicas, como a da Mellanox Technologies, fortaleceram ainda mais sua posição no mercado.</p>
+                    </div>
+                    <button class="details-button" onclick="maisDetalhes('card_NVDA', 'mais_nvda')" id="mais_nvda">Ler mais</button>
+                    <div class="content">
+                        <div class="section">
+                            <h2>Cotação (%)</h2>
+                            <p>Mês Atual: <span>1.34%</span></p>
+                            <p>Mês Anterior: <span>7,54%</span></p>
+                            <p>12 Meses: <span>57,47%</span></p>
+                        </div>
+                        <div class="section">
+                            <h2>Valor</h2>
+                            <p>Ação: <span class="value">R$ 128,01</span></p>
+                        </div>
+                    </div>
+                    <button class="invest-button" onclick="vendas('invest/risco_baixo.png', 'NVIDIA Corporation (NVDA)', '1.34%', '7,54%', '57,47%', '128.01')">Investir</button>
+                </div>  
+                
+                <div class="card card_risco_medio">
+                    <div class="header_card">
+                        <img src="invest/risco_medio.png" alt="Logo" class="logo">
+                        <h1>Microsoft Corporation (MSFT)</h1>
+                    </div>
+                    <div class="body_card" id="card_MSFT" data-expandido="false">
+                        <p>A Microsoft é uma das maiores empresas de tecnologia do mundo, conhecida pelo sistema operacional Windows, a suíte de produtividade Office e a plataforma de nuvem Azure. Fundada em 1975 por Bill Gates e Paul Allen, a Microsoft revolucionou a computação pessoal e continua a liderar em várias áreas da tecnologia.</p>
+                        
+                        <h4>Principais Produtos e Serviços</h4>
+                        <p>Seus principais produtos incluem o Windows, o sistema operacional mais utilizado em PCs; o Office (agora Microsoft 365), uma suíte de produtividade com ferramentas como Word, Excel e PowerPoint; e a Azure, uma das principais plataformas de computação em nuvem. A Microsoft também investe fortemente em inteligência artificial e aprendizado de máquina, com produtos como Cortana e Power BI, e se expandiu para hardware com dispositivos como Xbox e Surface.</p>
+                        
+                        <h4>Segurança e Responsabilidade Social</h4>
+                        <p>Além disso, a Microsoft é comprometida com a segurança cibernética e a privacidade dos usuários, oferecendo soluções avançadas como o Microsoft Defender. A empresa tem um impacto global significativo e investe em responsabilidade social através de iniciativas de educação, inclusão digital e sustentabilidade. Suas aquisições estratégicas, como LinkedIn e GitHub, e parcerias com outras grandes empresas ampliam suas capacidades e inovações.</p>
+                    </div>
+                    <button class="details-button" onclick="maisDetalhes('card_MSFT', 'mais_msft')" id="mais_msft">Ler mais</button>
+                    <div class="content">
+                        <div class="section">
+                            <h2>Cotação (%)</h2>
+                            <p>Mês Atual: <span>1.14%</span></p>
+                            <p>Mês Anterior: <span>5,94%</span></p>
+                            <p>12 Meses: <span>20,47%</span></p>
+                        </div>
+                        <div class="section">
+                            <h2>Valor</h2>
+                            <p>Ação: <span class="value">R$ 449,71</span></p>
+                        </div>
+                    </div>
+                    <button class="invest-button" onclick="vendas('invest/risco_medio.png', 'Microsoft Corporation (MSFT)', '1.14%', '5,94%', '20,47%', '449.71')">Investir</button>
+                </div>   
+        
+                <div class="card card_risco_moderado">
+                    <div class="header_card">
+                        <img src="invest/risco_moderado.png" alt="Logo" class="logo">
+                        <h1>Amazon.com Inc. (AMZO34)</h1>
+                    </div>
+                    <div class="body_card" id="card_AMZO34" data-expandido="false">
+                        <p>A Amazon revolucionou o e-commerce com seu marketplace, oferecendo milhões de produtos e serviços como o Amazon Prime, que proporciona entrega rápida e acesso a conteúdo exclusivo de streaming. Investimentos em inteligência artificial e machine learning melhoram a experiência de compra e personalizam recomendações de produtos. Além do e-commerce, a Amazon é líder em serviços de computação em nuvem com a Amazon Web Services (AWS), lançada em 2006, que oferece infraestrutura e plataformas em nuvem usadas por empresas de todos os tamanhos para hospedar aplicativos, gerenciar dados e implementar soluções tecnológicas avançadas.</p>
+                        
+                        <p>A Amazon, fundada por Jeff Bezos em 1994, é uma das maiores e mais influentes empresas de tecnologia e e-commerce do mundo. Inicialmente uma livraria online, a empresa rapidamente expandiu seu catálogo para incluir uma ampla gama de produtos, desde eletrônicos a roupas e alimentos, destacando-se pela inovação, eficiência logística e atendimento ao cliente.</p>
+                        
+                        <p>A empresa também lidera em inovação tecnológica com projetos como Amazon Go, uma loja física sem caixas, e Alexa, uma assistente virtual, além de investir em drones para entregas rápidas e no desenvolvimento de veículos autônomos. A Amazon continua a expandir globalmente, adquirindo empresas como Whole Foods Market e produzindo conteúdo original através da Amazon Studios para o Prime Video, competindo com outras plataformas de streaming.</p>
+                    </div>
+                    <button class="details-button" onclick="maisDetalhes('card_AMZO34', 'mais_amazon')" id="mais_amazon">Ler mais</button>
+                    <div class="content">
+                        <div class="section">
+                            <h2>Cotação (%)</h2>
+                            <p>Mês Atual: <span>2.84%</span></p>
+                            <p>Mês Anterior: <span>6,54%</span></p>
+                            <p>12 Meses: <span>50,47%</span></p>
+                        </div>
+                        <div class="section">
+                            <h2>Valor</h2>
+                            <p>Ação: <span class="value">R$ 52,42</span></p>
+                        </div>
+                    </div>
+                    <button class="invest-button" onclick="vendas('invest/risco_moderado.png','Amazon.com Inc. (AMZO34)', '2.84%', '6,54%', '50,47%', '52.42')">Investir</button>
+                </div>   
+        
+                <div class="card card_risco_pouco">
+                    <div class="header_card">
+                        <img src="invest/risco_pouco.png" alt="Logo" class="logo">
+                        <h1>Google Alphabet Inc. (GOOG)</h1>
+                    </div>
+                    <div class="body_card" id="card_Google" data-expandido="false">
+                        <p>Google, uma subsidiária da Alphabet Inc., é líder em pesquisa online e publicidade digital. Além disso, oferece uma ampla gama de serviços tecnológicos, incluindo o Android, o sistema operacional móvel mais utilizado no mundo, e o Google Cloud, uma plataforma de computação em nuvem que fornece infraestrutura e serviços para empresas. A empresa também está envolvida em projetos de inteligência artificial, como o desenvolvimento de assistentes virtuais e carros autônomos. Google é conhecida por sua cultura corporativa única e inovação constante, influenciando significativamente o mercado global de tecnologia e internet.</p>
+                    </div>
+                    <button class="details-button" onclick="maisDetalhes('card_Google', 'mais_google')" id="mais_google">Ler mais</button>
+                    
+                    <div class="content">
+                        <div class="section">
+                            <h2>Cotação (%)</h2>
+                            <p>Mês Atual: <span>0.84%</span></p>
+                            <p>Mês Anterior: <span>7,54%</span></p>
+                            <p>12 Meses: <span>34,47%</span></p>
+                        </div>
+                        <div class="section">
+                            <h2>Valor</h2>
+                            <p>Ação: <span class="value">R$ 188,42</span></p>
+                        </div>
+                    </div>
+                    <button class="invest-button" onclick="vendas('invest/risco_pouco.png','Google Alphabet Inc. (GOOG)', '0.84%', '7,54%', '34,47%', '188.42')">Investir</button>
+                </div>
+                
+                <div class="card card_risco_moderado">
+                    <div class="header_card">
+                        <img src="invest/risco_moderado.png" alt="Logo" class="logo">
+                        <h1>Facebook, Inc. (M1TA34)</h1>
+                    </div>
+                    <div class="body_card" id="card_Facebook" data-expandido="false">
+                        <p>Facebook, agora conhecida como Meta Platforms, Inc., é uma das maiores redes sociais do mundo. Além de conectar bilhões de pessoas globalmente, a empresa está liderando investimentos significativos no desenvolvimento do metaverso, uma nova plataforma digital tridimensional onde pessoas podem interagir, trabalhar e se divertir de maneiras imersivas. Meta continua a explorar novas tecnologias como realidade virtual e aumentada para expandir as fronteiras da interação social e experiências digitais.</p>
+                    </div>
+                    <button class="details-button" onclick="maisDetalhes('card_Facebook', 'mais_meta')" id="mais_meta">Ler mais</button>
+                    
+                    <div class="content">
+                        <div class="section">
+                            <h2>Cotação (%)</h2>
+                            <p>Mês Atual: <span>1.34%</span></p>
+                            <p>Mês Anterior: <span>4,54%</span></p>
+                            <p>12 Meses: <span>24,47%</span></p>
+                        </div>
+                        <div class="section">
+                            <h2>Valor</h2>
+                            <p>Ação: <span class="value">R$ 95,21</span></p>
+                        </div>
+                    </div>
+                    <button class="invest-button" onclick="vendas('invest/risco_moderado.png','Facebook, Inc. (M1TA34)', '1.34%', '4,54%', '24,47%', '95.21')">Investir</button>
+                </div>
+                
+                <div class="card card_risco_medio">
+                    <div class="header_card">
+                        <img src="invest/risco_medio.png" alt="Logo" class="logo">
+                        <h1>Samsung Electronics Co Ltd (005930)</h1>
+                    </div>
+                    <div class="body_card" id="card_Samsung" data-expandido="false">
+                        <p>Samsung é uma das maiores empresas de tecnologia do mundo, conhecida não apenas por seus smartphones e televisores, mas também por uma ampla gama de eletrônicos de consumo, como eletrodomésticos, monitores, semicondutores e soluções de tecnologia para empresas. Além de seus produtos de consumo, a Samsung é líder em inovação, investindo em pesquisa e desenvolvimento em áreas como inteligência artificial, internet das coisas (IoT) e tecnologia 5G, moldando constantemente o futuro da indústria tecnológica global.</p>
+                    </div>
+                    <button class="details-button" onclick="maisDetalhes('card_Samsung', 'mais_samsung')" id="mais_samsung">Ler mais</button>
+                    
+                    <div class="content">
+                        <div class="section">
+                            <h2>Cotação (%)</h2>
+                            <p>Mês Atual: <span>2.84%</span></p>
+                            <p>Mês Anterior: <span>6,54%</span></p>
+                            <p>12 Meses: <span>50,47%</span></p>
+                        </div>
+                        <div class="section">
+                            <h2>Valor</h2>
+                            <p>Ação: <span class="value">R$ 52,42</span></p>
+                        </div>
+                    </div>
+                    <button class="invest-button" onclick="vendas('invest/risco_medio.png', 'Samsung Electronics Co Ltd (005930)', '2.84%', '6,54%', '50,47%', '52.42')">Investir</button>
+                </div>
+                
+                <div class="card card_risco_baixo">
+                    <div class="header_card">
+                        <img src="invest/risco_baixo.png" alt="Logo" class="logo">
+                        <h1>IBM (IBMB34)</h1>
+                    </div>
+                    <div class="body_card" id="card_IBM" data-expandido="false">
+                        <p>IBM (International Business Machines Corporation) é uma empresa líder global em computação e serviços de TI. Reconhecida por suas inovações em hardware, software e soluções de inteligência artificial, a IBM oferece uma ampla gama de produtos e serviços que incluem mainframes, servidores, software empresarial, serviços de consultoria e soluções em nuvem. A empresa tem sido pioneira em áreas como computação quântica e blockchain, além de ser conhecida por seu compromisso com a pesquisa e desenvolvimento, contribuindo significativamente para avanços tecnológicos em várias indústrias ao redor do mundo.</p>
+                    </div>
+                    <button class="details-button" onclick="maisDetalhes('card_IBM', 'mais_ibm')" id="mais_ibm">Ler mais</button>
+                    <div class="content">
+                        <div class="section">
+                            <h2>Cotação (%)</h2>
+                            <p>Mês Atual: <span>1.67%</span></p>
+                            <p>Mês Anterior: <span>9,14%</span></p>
+                            <p>12 Meses: <span>31,81%</span></p>
+                        </div>
+                        <div class="section">
+                            <h2>Valor</h2>
+                            <p>Ação: <span class="value">R$ 1000,45</span></p>
+                        </div>
+                    </div>
+                    <button class="invest-button" onclick="vendas('invest/risco_baixo.png', 'IBM (IBMB34)', '1.67%', '9,14%', '31,81%', '1000.45')">Investir</button>
+                </div>
+                <div class="card card_risco_pouco">
+                    <div class="header_card">
+                        <img src="invest/risco_pouco.png" alt="Logo" class="logo">
+                        <h1>Intel Corporation (ITLC34)</h1>
+                    </div>
+                    <div class="body_card" id="card_ITLC" data-expandido="false">
+                        <p>Intel Corporation é uma das maiores fabricantes de semicondutores do mundo. A empresa é conhecida por fornecer processadores para uma ampla gama de dispositivos eletrônicos, incluindo PCs, servidores, laptops, dispositivos móveis e infraestrutura de rede. Além dos processadores, a Intel desenvolve tecnologias-chave como memórias flash, chipsets e soluções para data centers. Com um foco contínuo em inovação, a Intel está na vanguarda de avanços tecnológicos, como inteligência artificial, 5G e computação quântica, impulsionando o progresso na indústria de tecnologia globalmente.</p>
+                    </div>
+                    <button class="details-button" onclick="maisDetalhes('card_ITLC', 'mais_intel')" id="mais_intel">Ler mais</button>
+                    <div class="content">
+                        <div class="section">
+                            <h2>Cotação (%)</h2>
+                            <p>Mês Atual: <span>2.11%</span></p>
+                            <p>Mês Anterior: <span>6,24%</span></p>
+                            <p>12 Meses: <span>60,47%</span></p>
+                        </div>
+                        <div class="section">
+                            <h2>Valor</h2>
+                            <p>Ação: <span class="value">R$ 30,99</span></p>
+                        </div>
+                    </div>
+                    <button class="invest-button" onclick="vendas('invest/risco_pouco.png','Intel Corporation (ITLC34)', '2.11%', '6,24%', '60,47%', '30.99')">Investir</button>
+                </div>
+        
+                <div class="card card_risco_pouco">
+                    <div class="header_card">
+                        <img src="invest/risco_pouco.png" alt="Logo" class="logo">
+                        <h1>Tencent Holdings Limited (0700)</h1>
+                    </div>
+                    <div class="body_card" id="card_Tencent" data-expandido="false">
+                        <p>Tencent, fundada em 1998 e com sede em Shenzhen, é uma das maiores empresas de tecnologia da China. A empresa é conhecida por seu diversificado portfólio, incluindo serviços de mídia social, jogos online, pagamentos digitais, serviços em nuvem, inteligência artificial e entretenimento digital.</p>
+                        <p>WeChat, um ecossistema digital completo, e QQ são seus principais serviços de mídia social. No setor de jogos, Tencent possui a Riot Games ("League of Legends"), participação na Epic Games ("Fortnite") e controla a Supercell ("Clash of Clans"), além de desenvolver jogos próprios.</p>
+                        <p>Os serviços de pagamento incluem WeChat Pay e Tenpay, que facilitam transações rápidas e seguras. Em nuvem e IA, a Tencent Cloud oferece soluções empresariais, enquanto a empresa investe em tecnologias avançadas.</p>
+                        <p>Impactando a economia chinesa, a Tencent cria empregos e contribui para o desenvolvimento tecnológico, afetando profundamente a vida cotidiana com suas plataformas digitais. Com foco no futuro, continua a investir em tecnologias emergentes, mantendo-se na liderança global em tecnologia.</p>
+                    </div>
+                    <button class="details-button" onclick="maisDetalhes('card_Tencent', 'mais_tencent')" id="mais_tencent">Ler mais</button>
+                    <div class="content">
+                        <div class="section">
+                            <h2>Cotação (%)</h2>
+                            <p>Mês Atual: <span>1.74%</span></p>
+                            <p>Mês Anterior: <span>4,38%</span></p>
+                            <p>12 Meses: <span>43,47%</span></p>
+                        </div>
+                        <div class="section">
+                            <h2>Valor</h2>
+                            <p>Ação: <span class="value">R$ 300,31</span></p>
+                        </div>
+                    </div>
+                    <button class="invest-button" onclick="vendas('invest/risco_pouco.png','Tencent Holdings Limited (0700)', '1.74%', '4,38%', '43,47%', '300,31')">Investir</button>
+                </div>
+                
+                <div class="card card_risco_pouco">
+                    <div class="header_card">
+                        <img src="invest/risco_pouco.png" alt="Logo" class="logo">
+                        <h1>TSMC (TSM)</h1>
+                    </div>
+                    <div class="body_card" id="card_TSMC" data-expandido="false">
+                        <p>TSMC (Taiwan Semiconductor Manufacturing Company) é a maior fabricante de chips semicondutores do mundo, essencial para uma vasta gama de dispositivos eletrônicos. Fundada em 1987 e sediada em Hsinchu, Taiwan, a TSMC se destaca por suas tecnologias de ponta, como a produção de chips de 5nm e 3nm, utilizados em smartphones, computadores e servidores. Seus clientes incluem gigantes como Apple, AMD, Qualcomm e NVIDIA.</p>
+                        <p>A empresa investe fortemente em pesquisa e desenvolvimento, mantendo-se à frente da concorrência e comprometida com práticas sustentáveis. Operando várias fábricas em Taiwan e expandindo para os Estados Unidos e Japão, a TSMC colabora com líderes do setor para desenvolver novas tecnologias.</p>
+                        <p>Como um elo vital na cadeia de suprimentos global, a TSMC impacta setores como eletrônicos de consumo, automotivos e telecomunicações. A empresa enfrenta desafios de competição e geopolítica, mas tem vastas oportunidades com a crescente demanda por dispositivos eletrônicos e tecnologias emergentes.</p>
+                        <p>Em resumo, a TSMC é crucial para a produção de dispositivos eletrônicos avançados e está bem posicionada para continuar seu crescimento e influência na indústria de tecnologia.</p>
+                    </div>
+                    <button class="details-button" onclick="maisDetalhes('card_TSMC', 'mais_tscm')" id="mais_tscm">Ler mais</button>
+                    <div class="content">
+                        <div class="section">
+                            <h2>Cotação (%)</h2>
+                            <p>Mês Atual: <span>1.89%</span></p>
+                            <p>Mês Anterior: <span>3,54%</span></p>
+                            <p>12 Meses: <span>60,17%</span></p>
+                        </div>
+                        <div class="section">
+                            <h2>Valor</h2>
+                            <p>Ação: <span class="value">R$ 186,04</span></p>
+                        </div>
+                    </div>
+                    <button class="invest-button" onclick="vendas('invest/risco_pouco.png','TSMC (TSM)', '1.89%', '3,54%', '60,17%', '186,04')">Investir</button>
+                </div>
+                
+                <div class="card card_risco_alto">
+                    <div class="header_card">
+                        <img src="invest/risco_alto.png" alt="Logo Saudia Aramco" class="logo">
+                        <h1>Saudi Aramco</h1>
+                    </div>
+                    <div class="body_card" id="card_SaudiAramco" data-expandido="false">
+                        <p>Saudi Aramco, oficialmente Saudi Arabian Oil Company, é a maior empresa de energia do mundo e um dos principais líderes na produção de petróleo bruto. Fundada em 1933, a empresa estatal saudita desempenha um papel crucial no setor global de energia, não apenas pela sua produção massiva de petróleo, mas também pela sua significativa influência nos mercados internacionais de energia. Além do petróleo bruto, Saudi Aramco está envolvida em diversas áreas da cadeia de valor de energia, desde exploração e produção até refino e distribuição.</p>
+                    </div>
+                    <button class="details-button" onclick="maisDetalhes('card_SaudiAramco', 'mais_aramco')" id="mais_aramco">Ler mais</button>
+                    <div class="content">
+                        <div class="section">
+                            <h2>Rentabilidade (%)</h2>
+                            <p>Mês Atual: <span>1.50%</span></p>
+                            <p>Mês Anterior: <span>2.30%</span></p>
+                            <p>12 Meses: <span>15.80%</span></p>
+                        </div>
+                        <div class="section">
+                            <h2>Valor</h2>
+                            <p>Ação: <span class="value">R$245.50</span></p>
+                        </div>
+                    </div>
+                    <button class="invest-button" onclick="vendas('invest/risco_alto.png','Saudi Aramco', '1.50%', '2.30%', '15.80%', '245.50')">Investir</button>
+
+                </div>
+                
+                <div class="card card_risco_medio">
+                    <div class="header_card">
+                        <img src="invest/risco_medio.png" alt="Logo Tesla, Inc." class="logo">
+                        <h1>Tesla, Inc.</h1>
+                    </div>
+                    <div class="body_card" id="card_Tesla" data-expandido="false">
+                        <p>Tesla, Inc., uma empresa globalmente reconhecida, é famosa por seus revolucionários veículos elétricos, soluções inovadoras em energia solar e avanços na tecnologia automotiva. Fundada por Elon Musk e outros em 2003, a Tesla tem sido pioneira na integração de design de ponta, eficiência energética e sustentabilidade ambiental em seus produtos. Além de carros elétricos, a empresa também desenvolve baterias de alta performance e sistemas de armazenamento de energia, contribuindo significativamente para a transição global para fontes de energia renováveis.</p>
+                    </div>
+                    <button class="details-button" onclick="maisDetalhes('card_Tesla', 'mais_tesla')" id="mais_tesla">Ler mais</button>
+                    <div class="content">
+                        <div class="section">
+                            <h2>Rentabilidade (%)</h2>
+                            <p>Mês Atual: <span>3.80%</span></p>
+                            <p>Mês Anterior: <span>5.60%</span></p>
+                            <p>12 Meses: <span>80.20%</span></p>
+                        </div>
+                        <div class="section">
+                            <h2>Valor</h2>
+                            <p>Ação: <span class="value">R$780.60</span></p>
+                        </div>
+                    </div>
+                    <button class="invest-button" onclick="vendas('invest/risco_medio.png','Tesla, Inc.', '3.80%', '5.60%', '80.20%', '780.60')">Investir</button>
+                </div>
+                <div class="card card_risco_medio">
+                    <div class="header_card">
+                        <img src="invest/risco_medio.png" alt="Logo Berkshire Hathaway" class="logo">
+                        <h1>Berkshire Hathaway</h1>
+                    </div>
+                    <div class="body_card" id="card_BerkshireHathaway" data-expandido="false">
+                        <p>Berkshire Hathaway é uma holding diversificada sediada nos Estados Unidos, conhecida por seus investimentos em seguros, ferrovias, energia, alimentos e uma variedade de serviços. Fundada pelo renomado investidor Warren Buffett, a empresa é amplamente reconhecida por sua abordagem de longo prazo para investimentos e sua estratégia de adquirir participações em empresas com sólidos fundamentos financeiros e potencial de crescimento sustentável. Além de suas operações principais, Berkshire Hathaway também possui um vasto portfólio de participações em empresas líderes em diversos setores da economia global.</p>
+                    </div>
+                    <button class="details-button" onclick="maisDetalhes('card_BerkshireHathaway', 'mais_bh')" id="mais_bh">Ler mais</button>
+                    <div class="content">
+                        <div class="section">
+                            <h2>Rentabilidade (%)</h2>
+                            <p>Mês Atual: <span>2.10%</span></p>
+                            <p>Mês Anterior: <span>4.20%</span></p>
+                            <p>12 Meses: <span>25.50%</span></p>
+                        </div>
+                        <div class="section">
+                            <h2>Valor</h2>
+                            <p>Ação: <span class="value">R$435.20</span></p>
+                        </div>
+                    </div>
+                    <button class="invest-button" onclick="vendas('invest/risco_medio.png','Berkshire Hathaway', '2.10%', '4.20%', '25.50%', '435.20')">Investir</button>
+                </div>
+                
+                <div class="card card_risco_moderado">
+                    <div class="header_card">
+                        <img src="invest/risco_moderado.png" alt="Logo Visa Inc." class="logo">
+                        <h1>Visa Inc.</h1>
+                    </div>
+                    <div class="body_card" id="card_Visa" data-expandido="false">
+                        <p>Visa Inc. é uma empresa líder global no setor de pagamentos, facilitando transações financeiras eletrônicas em escala mundial. Fundada para simplificar e agilizar o processo de pagamento, Visa conecta consumidores, empresas, instituições financeiras e governos através de sua rede segura e confiável. Com uma presença significativa em mais de 200 países e territórios, Visa desempenha um papel crucial na economia global, oferecendo soluções inovadoras que promovem a eficiência e a segurança nas transações financeiras eletrônicas.</p>
+                    </div>
+                    <button class="details-button" onclick="maisDetalhes('card_Visa', 'mais_visa')" id="mais_visa">Ler mais</button>
+                    <div class="content">
+                        <div class="section">
+                            <h2>Rentabilidade (%)</h2>
+                            <p>Mês Atual: <span>1.90%</span></p>
+                            <p>Mês Anterior: <span>3.10%</span></p>
+                            <p>12 Meses: <span>18.70%</span></p>
+                        </div>
+                        <div class="section">
+                            <h2>Valor</h2>
+                            <p>Ação: <span class="value">R$210.80</span></p>
+                        </div>
+                    </div>
+                    <button class="invest-button" onclick="vendas('invest/risco_moderado.png','Visa Inc.', '1.90%', '3.10%', '18.70%', '210.80')">Investir</button>
+                </div>
+
+                <div class="card card_risco_alto">
+                    <div class="header_card">
+                        <img src="invest/risco_alto.png" alt="Logo Walmart Inc." class="logo">
+                        <h1>Walmart Inc.</h1>
+                    </div>
+                    <div class="body_card" id="card_Walmart" data-expandido="false">
+                        <p>Walmart Inc. é uma das maiores redes varejistas do mundo, operando uma extensa rede de supermercados, hipermercados e lojas de desconto. Fundada em 1962 por Sam Walton nos Estados Unidos, a empresa é conhecida por sua escala impressionante e presença global. Além de suas operações de varejo físico, o Walmart também expandiu significativamente suas operações online, oferecendo uma ampla variedade de produtos e serviços para milhões de clientes em todo o mundo.</p>
+                    </div>
+                    <button class="details-button" onclick="maisDetalhes('card_Walmart', 'mais_walmart')" id="mais_walmart">Ler mais</button>
+                    <div class="content">
+                        <div class="section">
+                            <h2>Rentabilidade (%)</h2>
+                            <p>Mês Atual: <span>1.50%</span></p>
+                            <p>Mês Anterior: <span>2.60%</span></p>
+                            <p>12 Meses: <span>12.80%</span></p>
+                        </div>
+                        <div class="section">
+                            <h2>Valor</h2>
+                            <p>Ação: <span class="value">R$150.40</span></p>
+                        </div>
+                    </div>
+                    <button class="invest-button" onclick="vendas('invest/risco_alto.png','Walmart Inc.', '1.50%', '2.60%', '12.80%', '150.40')">Investir</button>
+                </div>
+
+                <div class="card card_risco_medio">
+                    <div class="header_card">
+                        <img src="invest/risco_medio.png" alt="Logo Johnson & Johnson" class="logo">
+                        <h1>Johnson & Johnson</h1>
+                    </div>
+                    <div class="body_card" id="card_JohnsonJohnson" data-expandido="false">
+                        <p>Johnson & Johnson é uma renomada empresa multinacional dedicada à saúde e bem-estar, destacando-se pela sua vasta gama de produtos farmacêuticos, de cuidados pessoais e médicos. Fundada em 1886 nos Estados Unidos, a empresa é reconhecida mundialmente por sua inovação constante e compromisso com a saúde pública. Além de suas contribuições significativas para medicamentos e cuidados pessoais, Johnson & Johnson também desempenha um papel importante em áreas como dispositivos médicos e diagnósticos laboratoriais, oferecendo soluções que impactam positivamente milhões de vidas em todo o mundo.</p>
+                    </div>
+                    <button class="details-button" onclick="maisDetalhes('card_JohnsonJohnson', 'mais_jej')" id="mais_jej">Ler mais</button>
+                    <div class="content">
+                        <div class="section">
+                            <h2>Rentabilidade (%)</h2>
+                            <p>Mês Atual: <span>1.80%</span></p>
+                            <p>Mês Anterior: <span>3.20%</span></p>
+                            <p>12 Meses: <span>20.10%</span></p>
+                        </div>
+                        <div class="section">
+                            <h2>Valor</h2>
+                            <p>Ação: <span class="value">R$172.60</span></p>
+                        </div>
+                    </div>
+                    <button class="invest-button" onclick="vendas('invest/risco_medio.png','Johnson & Johnson', '1.80%', '3.20%', '20.10%', '172.60')">Investir</button>
+                </div>
+                
+                <div class="card card_risco_baixo">
+                    <div class="header_card">
+                        <img src="invest/risco_baixo.png" alt="Logo Nestlé S.A." class="logo">
+                        <h1>Nestlé S.A.</h1>
+                    </div>
+                    <div class="body_card" id="card_Nestle" data-expandido="false">
+                        <p>Nestlé S.A. é a maior empresa de alimentos e bebidas do mundo, reconhecida por seu extenso portfólio de produtos que abrange desde alimentos e bebidas até nutrição e bem-estar. Fundada em 1866 na Suíça, a Nestlé se estabeleceu como um líder global no setor alimentício, oferecendo marcas icônicas que são consumidas diariamente por milhões de pessoas ao redor do mundo. Além de seu compromisso com a qualidade e inovação, a empresa também se destaca por suas iniciativas sustentáveis e responsabilidade social, buscando constantemente melhorar a qualidade de vida e contribuir para um futuro mais saudável e sustentável.</p>
+                    </div>
+                    <button class="details-button" onclick="maisDetalhes('card_Nestle', 'mais_nestle')" id="mais_nestle">Ler mais</button>
+                    <div class="content">
+                        <div class="section">
+                            <h2>Rentabilidade (%)</h2>
+                            <p>Mês Atual: <span>1.70%</span></p>
+                            <p>Mês Anterior: <span>2.90%</span></p>
+                            <p>12 Meses: <span>15.40%</span></p>
+                        </div>
+                        <div class="section">
+                            <h2>Valor</h2>
+                            <p>Ação: <span class="value">$125.90</span></p>
+                        </div>
+                    </div>
+                    <button class="invest-button" onclick="vendas('invest/risco_baixo.png','Nestlé S.A.', '1.70%', '2.90%', '15.40%', '125.90')">Investir</button>
+                </div>
+        </div>
+        <div id="cripto_redirect"></div>
+        <button class="mostrar_mais_button" onclick="maisAcoes('acoes_itens')" id="mais_acao">Mostrar mais Ações</button>
+    </div>
+    <div class="cripto_pai">
+        <div class="cripto_title"><h1>Criptomoedas</h1></div>
+        <div class="box_cripto">
+           <div class="cripto_item">
+                <div class="cripto_name">
+                    <img src="invest/bitcoin-icon.png" alt="" height="40px">
+                    <h1>Bitcoin</h1>
+                    <h2>(BTC)</h2>
+                </div>
+                <div class="cripto_rend">
+                    <h2>R$352,881.25</h2>
+                    <h3>1,51%</h3>
+                </div>
+           </div>
+           <div>
+                <button class="cripto_info">Mai Detalhes</button>
+                <button class="cripto_buy" onclick="vendas_cripto('invest/bitcoin-icon.png', 'Bitcoin', '(BTC)', '352,881.25', '1,51%')">Comprar</button>
+           </div>
+        </div>
+        <div class="box_cripto">
+            <div class="cripto_item">
+            <div class="cripto_name">
+                <img src="invest/ethereum-icon.png" alt="" height="40px">
+                <h1>Ethereum</h1>
+                <h2>(ETH)</h2>
+            </div>
+            <div class="cripto_rend">
+                <h2>R$18,543.30</h2>
+                <h3>2,34%</h3>
+            </div>
+            </div>
+            <div>
+            <button class="cripto_info">Mais Detalhes</button>
+            <button class="cripto_buy" onclick="vendas_cripto('invest/ethereum-icon.png', 'Ethereum', '(ETH)', '18,543.30', '2,34%')">Comprar</button>
+            </div>
+        </div>
+        <div class="box_cripto">
+            <div class="cripto_item">
+            <div class="cripto_name">
+                <img src="invest/thether-icon.png" alt="" height="40px">
+                <h1>Tether</h1>
+                <h2>(USDT)</h2>
+            </div>
+            <div class="cripto_rend">
+                <h2>R$5,50</h2>
+                <h3>-0,80%</h3>
+            </div>
+            </div>
+            <div>
+            <button class="cripto_info">Mais Detalhes</button>
+            <button class="cripto_buy" onclick="vendas_cripto('invest/thether-icon.png', 'Tether', '(USDT)', '5,50', '-0,80%')">Comprar</button>
+            </div>
+        </div>
+        <div class="box_cripto">
+            <div class="cripto_item">
+            <div class="cripto_name">
+                <img src="invest/bnb-icon.png" alt="" height="40px">
+                <h1>Binance Coin</h1>
+                <h2>(BNB)</h2>
+            </div>
+            <div class="cripto_rend">
+                <h2>R$3.146,21</h2>
+                <h3>1,25%</h3>
+            </div>
+            </div>
+            <div>
+            <button class="cripto_info">Mais Detalhes</button>
+            <button class="cripto_buy" onclick="vendas_cripto('invest/bnb-icon.png', 'Binance Coin', '(BNB)', '3.146,21', '1,25%')">Comprar</button>
+            </div>
+        </div>
+        <div class="box_cripto">
+            <div class="cripto_item">
+            <div class="cripto_name">
+                <img src="invest/usd-coin-icon.png" alt="" height="40px">
+                <h1>USD Coin</h1>
+                <h2>(USDC)</h2>
+            </div>
+            <div class="cripto_rend">
+                <h2>R$5,48</h2>
+                <h3>0,93%</h3>
+            </div>
+            </div>
+            <div>
+            <button class="cripto_info">Mais Detalhes</button>
+            <button class="cripto_buy" onclick="vendas_cripto('invest/usd-coin-icon.png', 'USD Coin', '(USDC)', '5,48', '0,93%')">Comprar</button>
+            </div>
+        </div>
+        <div class="box_cripto">
+            <div class="cripto_item">
+            <div class="cripto_name">
+                <img src="invest/xrp-icon.png" alt="" height="40px">
+                <h1>XRP</h1>
+                <h2>(XRP)</h2>
+            </div>
+            <div class="cripto_rend">
+                <h2>R$3,39</h2>
+                <h3>7,56%</h3>
+            </div>
+            </div>
+            <div>
+            <button class="cripto_info">Mais Detalhes</button>
+            <button class="cripto_buy" onclick="vendas_cripto('invest/xrp-icon.png', 'XRP', '(XRP)', '3,39', '7,56%')">Comprar</button>
+            </div>
+        </div>
+        <div class="box_cripto">
+            <div class="cripto_item">
+            <div class="cripto_name">
+                <img src="invest/cardano-icon.png" alt="" height="40px">
+                <h1>Cardano</h1>
+                <h2>(ADA)</h2>
+            </div>
+            <div class="cripto_rend">
+                <h2>R$2,43</h2>
+                <h3>2,04%</h3>
+            </div>
+            </div>
+            <div>
+            <button class="cripto_info">Mais Detalhes</button>
+            <button class="cripto_buy" onclick="vendas_cripto('invest/cardano-icon.png', 'Cardano', '(ADA)', '2,43', '2,04%')">Comprar</button>
+            </div>
+        </div>
+        <div class="box_cripto">
+            <div class="cripto_item">
+            <div class="cripto_name">
+                <img src="invest/dogecoin-icon.png" alt="" height="40px">
+                <h1>Dogecoin</h1>
+                <h2>(DOGE)</h2>
+            </div>
+            <div class="cripto_rend">
+                <h2>R$0,68</h2>
+                <h3>-2,12%</h3>
+            </div>
+            </div>
+            <div>
+            <button class="cripto_info">Mais Detalhes</button>
+            <button class="cripto_buy" onclick="vendas_cripto('invest/dogecoin-icon.png', 'Dogecoin', '(DOGE)', '0,68', '-2,12%')">Comprar</button>
+            </div>
+        </div>
+        <div class="box_cripto">
+            <div class="cripto_item">
+            <div class="cripto_name">
+                <img src="invest/solana-icon.png" alt="" height="40px">
+                <h1>Solana</h1>
+                <h2>(SOL)</h2>
+            </div>
+            <div class="cripto_rend">
+                <h2>R$857,33</h2>
+                <h3>1,08%</h3>
+            </div>
+            </div>
+            <div>
+            <button class="cripto_info">Mais Detalhes</button>
+            <button class="cripto_buy" onclick="vendas_cripto('invest/solana-icon.png', 'Solana', '(SOL)', '857,33', '-1,08%')">Comprar</button>
+            </div>
+        </div>
+        <div class="box_cripto">
+            <div class="cripto_item">
+            <div class="cripto_name">
+                <img src="invest/polygon-icon.png" alt="" height="40px">
+                <h1>Polygon</h1>
+                <h2>(MATIC)</h2>
+            </div>
+            <div class="cripto_rend">
+                <h2>R$3,05</h2>
+                <h3>6,45%</h3>
+            </div>
+            </div>
+            <div>
+            <button class="cripto_info">Mais Detalhes</button>
+            <button class="cripto_buy" onclick="vendas_cripto('invest/polygon-icon.png', 'Polygon', '(MATIC)', '3,05', '-6,45%')">Comprar</button>
+            </div>
+        </div>
+    </div>
 </div>
+<a href="index.html">Home</a>
+</body>
+</html>
